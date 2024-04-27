@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: frontapp
   labels:
-    training: block3
     homework: frontapp
 spec:
   selector:
@@ -14,7 +13,6 @@ spec:
     metadata:
       labels:
         homework: frontapp
-        training: block3
     spec:
       containers:
         - name: frontapp

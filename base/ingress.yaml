@@ -4,7 +4,6 @@ kind: Ingress
 metadata:
   name: ingress
   labels:
-    training: block3
     homework: frontapp
 spec:
   rules:

@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: backapp
   labels:
-    training: block3
     homework: backapp
 spec:
   selector:
@@ -14,7 +13,6 @@ spec:
     metadata:
       labels:
         homework: backapp
-        training: block3
     spec:
       containers:
         - name: backapp
