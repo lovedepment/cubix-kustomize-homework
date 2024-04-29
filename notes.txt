@@ -1,0 +1,21 @@
+### namespaces hw4-dev,hw4-test, hw4-prod
+kubectl create namespace hw4-dev
+kubectl create namespace hw4-test
+kubectl create namespace hw4-prod
+
+kubectl delete namespace hw4-dev
+kubectl delete namespace hw4-test
+kubectl delete namespace hw4-prod
+
+### Render kustomize overlays
+
+kubectl kustomize overlays/dev
+kubectl kustomize overlays/test
+kubectl kustomize overlays/prod
+
+### Apply kustomize overlays
+kubectl apply -k overlays/dev
+kubectl apply -k overlays/test
+kubectl apply -k overlays/prod
+
+kubectl delete  -k .
