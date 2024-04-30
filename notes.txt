@@ -18,4 +18,4 @@ kubectl apply -k overlays/dev
 kubectl apply -k overlays/test
 kubectl apply -k overlays/prod
 
-kubectl delete  -k .
+kubectl delete  -k overlays/prod

@@ -6,7 +6,8 @@ metadata:
     homework: frontapp
 spec:
   rules:
-  - http:
+  - host: application.cubix.localhost
+    http:
       paths:
       - path: /frontapp
         pathType: Prefix
