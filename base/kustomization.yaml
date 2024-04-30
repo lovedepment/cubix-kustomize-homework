@@ -5,3 +5,4 @@ resources:
   - deployment_frontapp.yaml
   - service_backapp.yaml
   - service_frontapp.yaml
+  - ingress.yaml
